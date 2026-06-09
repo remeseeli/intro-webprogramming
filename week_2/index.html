@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercise 2</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <table id="user-table">
+            <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Picture</th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+            <tr>
+                <td>superuser</td>
+                <td>sudoer@company.com</td>
+                <td>X</td>
+                <td>Picture</td>
+            </tr>
+            <tr>
+                <td>John Wick</td>
+                <td>babayaga@company.com</td>
+                <td>-</td>
+                <td>Picture</td>
+            </tr>
+            </tbody>
+        </table><br>
+        <form id="input-form"> 
+            <label for="input-username">Username</label><br>
+            <input id="input-username" type="text"><br>
+            <label for="input-email">Email</label><br>
+            <input id="input-email" type="text"><br>
+            <label for="input-admin">Admin status</label><br>
+            <input id="input-admin" type="checkbox"><br>
+            <input id="submit-data" type="button" value="Submit data">
+        </form><br>
+        <button id="clear-button">Clear table</button>
+    </body>
+</html>
