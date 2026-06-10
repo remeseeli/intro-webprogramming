@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!--Here, weuse a lot of the <br> tag, because we don't have access to CSS yet in this week.
+It makes the page at least a little more readable -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -20,13 +22,13 @@
                 <td>superuser</td>
                 <td>sudoer@company.com</td>
                 <td>X</td>
-                <td>Picture</td>
+                <td><img src="hacker.jpg" alt="Super hacker" width="64" height="64"></td>
             </tr>
             <tr>
                 <td>John Wick</td>
                 <td>babayaga@company.com</td>
                 <td>-</td>
-                <td>Picture</td>
+                <td><img src="johnwick.jpg" alt="John Wick" width="64" height="64"></td>
             </tr>
             </tbody>
         </table><br>
@@ -37,6 +39,8 @@
             <input id="input-email" type="text"><br>
             <label for="input-admin">Admin status</label><br>
             <input id="input-admin" type="checkbox"><br>
+            <label for="input-file">Upload picture</label><br>
+            <input id="input-file" type="file"><br><br>
             <input id="submit-data" type="button" value="Submit data">
         </form><br>
         <button id="clear-button">Clear table</button>
