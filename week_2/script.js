@@ -13,18 +13,17 @@ and
 const submitButton = document.querySelector("#submit-data");
 submitButton.addEventListener("click", addRow);
 // Select clear button to clear table
-const clearButton = document.querySelector("#clear-button");
+const clearButton = document.querySelector("#empty-table");
 clearButton.addEventListener("click", clearTable);
 // Task 5: Image upload support
 const fileSelect = document.getElementById("fileSelect");
-const imgInput = document.getElementById("input-file");
+const imgInput = document.getElementById("input-image");
 fileSelect.addEventListener("click", (e) => {
     e.preventDefault(); // prevent navigation to "#"
     if (imgInput) {
         imgInput.click();
     }
 });
-imgInput.addEventListener("change", handleFiles);
 
 function addRow(e) {
     // prevents refresh
