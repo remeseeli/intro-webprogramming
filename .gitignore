@@ -1,5 +1,2 @@
 # ignore image files in week 2 exercise
 week_2/*.jpg
-# Ignore query file in week 3 exercise
-week_3/population_query.json
-week_3/employment_query.json
