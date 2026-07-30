@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6</title>
+  <!-- Import Frappe-charts -->
+  <script src="https://unpkg.com/frappe-charts@1.6.2/dist/frappe-charts.min.umd.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Population Growth in Finland</h1>
+  
+  <a href="newchart.html" id="navigation">View Births and Deaths</a>
+
+  <div class="controls">
+    <input type="text" id="input-area" placeholder="Enter municipality (e.g., Lahti)" />
+    <button id="submit-data">Search</button>
+  </div>
+
+  <div id="chart"></div>
+  
+  <button id="add-data">Predict Next Data Point</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

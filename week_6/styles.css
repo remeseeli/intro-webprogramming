@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
