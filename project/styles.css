@@ -1,0 +1,81 @@
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    min-height: 100vh;
+}
+/* Make sure search box displays the placeholder text*/
+@media (min-width: 992px) {
+    #search-input {
+        min-width: 260px;
+    }
+}
+/* Fixes clouds disappearing into daytime bright color theme */
+body:not(.theme-night) img {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.8));
+}
+.theme-night .frappe-chart .title,
+.theme-night .frappe-chart .chart-legend text,
+.theme-night .frappe-chart .x.axis text,
+.theme-night .frappe-chart .y.axis text {
+    fill: #f8f9fa !important;
+}
+.weather-card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dynamic themes for different time and weather */
+.theme-default {
+    --bg-color: #e0eacc;
+    --card-bg: #ffffff;
+}
+
+.theme-cold {
+    --bg-color: #cce0ff;
+    --card-bg: #e6f0ff;
+    --text-color: #003366;
+}
+
+.theme-hot {
+    --bg-color: #ffcccc;
+    --card-bg: #ffe6e6;
+    --text-color: #660000;
+}
+
+.theme-night {
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --text-color: #f8f9fa;
+}
+/* Make the moon bright-ish at night, so it's not dark */
+.theme-night img {
+    filter: invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.95));
+}
+
+#current-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.forecast-day {
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    min-width: 100px;
+}
+
+.forecast-day img {
+    width: 50px;
+    height: 50px;
+}
